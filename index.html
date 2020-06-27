@@ -4,10 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fetching JSON data from external API</title>
+    <style>
+
+        h1,h3 {
+            text-align: center;
+        }
+
+        .btn-align {
+            display: flex;
+            justify-content: center;
+        }
+       
+        .user {
+            display: flex;
+          flex-direction: column;
+          align-items: center;
+            background: #A4B0BD;
+            padding: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .user li {
+            list-style: none;
+        }
+    </style>
 </head>
 <body>
     <h1>Fetching data from External API in the form of JSON and Displaying on the webpage</h1>
+    <div class="btn-align">
+    <button id="btn">Load My github Follower</button>
+</div>
+    <h3>Followers</h3>
+    <div id="followers">
 
+    </div>
     <script src="main.js"></script>
 </body>
 </html>
