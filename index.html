@@ -27,6 +27,13 @@
         .user li {
             list-style: none;
         }
+
+        .note {
+           text-align: center;
+           max-width: 200ch;
+           color: indianred;
+           font-weight: 700;
+        }
     </style>
 </head>
 <body>
@@ -34,10 +41,15 @@
     <div class="btn-align">
     <button id="btn">Load My github Followers</button>
 </div>
+
+<p class="note">In case you get 403 limit error then I haven't authorized my account to access tokens but you can do that just go to github settings and get tokens. Instead of my followers url paste the tokens</p>
+
     <h3>Followers</h3>
     <div id="followers">
 
     </div>
+
+    <h5 id="error"><h5>
     <h5>Demo by: Ali Dhuniya while learning Consuming API</h5>
     <script src="main.js"></script>
 </body>

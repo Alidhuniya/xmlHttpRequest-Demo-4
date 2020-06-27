@@ -1,3 +1,5 @@
+
+
 const loadFollowers = () => {
     const xhr = new XMLHttpRequest();
     xhr.open("GET", "https://api.github.com/users/Alidhuniya/followers", true);
@@ -19,9 +21,17 @@ const loadFollowers = () => {
                 `
             }
 
+            
+           
+            
+
             document.getElementById("followers").innerHTML = output;
+
             
         }
+        else if  (xhr.status === 403) {
+            return document.getElementById("error").innerHTML = "https://api.github.com/users/Alidhuniya/followers 403 (rate limit exceeded)" ;
+          }
     }
 
     xhr.send();
